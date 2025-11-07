@@ -1,0 +1,31 @@
+#include <stdio.h>
+int main() {
+char op;
+double num1,num2;
+printf("Enter an operator:(+,-,*,/)
+");
+scanf("%c",&op);
+printf("Enter two operator:)
+scanf("%lf%lf",&num1&num2);
+switch (op) {
+case'+':
+printf("Resul=%.2lf\n",num1+num2);
+break;
+case'-’:
+printf("Resul=%.2lf\n",num1-num2);
+break;
+case'*':
+printf("Result=%.2lf\n",num1*num2);
+break;
+case'/':
+if(num2!=0)
+printf(Resul=%.2lf\n",num1/num2);
+break;
+else("Error! Division by zero\n");
+break;
+default:
+printf("Invalid operator!\n");
+}
+return 0; 
+}
+
