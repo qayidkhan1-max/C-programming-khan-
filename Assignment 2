@@ -1,0 +1,166 @@
+Got it. I’ll rewrite everything fully in English and keep it clear, neat, and ready to write in your notebook.
+(Explanations will be simple and correct.)
+
+
+---
+
+1. What do you mean by arrays? Give one example of an array and how to declare an array.
+
+Answer:
+An array is a collection of elements of the same data type, stored in continuous memory locations.
+It allows us to store multiple values using a single variable name.
+
+Declaration:
+
+data_type array_name[size];
+
+Example:
+
+int marks[5];        // This array stores 5 integer values
+
+Initialization Example:
+
+int marks[5] = {85, 90, 75, 80, 95};
+
+
+---
+
+2. What do you mean by functions? Write types of functions and give one example of each.
+
+Answer:
+A function is a block of code that performs a specific task.
+Functions help to reuse code and make programs modular and organized.
+
+Types of Functions:
+
+1. Function with no arguments and no return value
+
+
+2. Function with arguments but no return value
+
+
+3. Function with arguments and return value
+
+
+
+Example 1: No arguments, no return value
+
+#include<stdio.h>
+void hello() {
+    printf("Hello World");
+}
+int main() {
+    hello();
+    return 0;
+}
+
+Example 2: With arguments, no return value
+
+#include<stdio.h>
+void sum(int a, int b) {
+    printf("Sum = %d", a + b);
+}
+int main() {
+    sum(10, 5);
+    return 0;
+}
+
+Example 3: With arguments and return value
+
+#include<stdio.h>
+int add(int a, int b) {
+    return a + b;
+}
+int main() {
+    int result = add(7, 3);
+    printf("Result = %d", result);
+    return 0;
+}
+
+
+---
+
+3. What do you mean by pointers? Write a code to initialize a pointer.
+
+Answer:
+A pointer is a variable that stores the memory address of another variable.
+
+Declaration:
+
+data_type *pointer_name;
+
+Example Code:
+
+#include<stdio.h>
+int main() {
+    int x = 10;
+    int *p;       // pointer declaration
+    p = &x;       // pointer initialization
+
+    printf("Value of x = %d\n", x);
+    printf("Address of x = %p\n", p);
+    printf("Value using pointer = %d", *p);
+    return 0;
+}
+
+
+---
+
+4. What are the types of array? Write code including 1D and 2D arrays.
+
+Types of Arrays:
+
+1. One Dimensional Array (1D)
+
+
+2. Two Dimensional Array (2D)
+
+
+
+1D Array Example:
+
+int numbers[5] = {1, 2, 3, 4, 5};
+
+2D Array Example:
+
+int matrix[2][3] = {
+    {1, 2, 3},
+    {4, 5, 6}
+};
+
+
+---
+
+5. Explain the types of operators in C with code.
+
+Types of Operators:
+
+1. Arithmetic Operators: +, -, *, /, %
+
+
+2. Relational Operators: >, <, ==, !=
+
+
+3. Logical Operators: &&, ||, !
+
+
+4. Assignment Operator: =
+
+
+
+Example Code:
+
+#include<stdio.h>
+int main() {
+    int a = 10, b = 3;
+
+    printf("Addition = %d\n", a + b);
+    printf("Is a greater than b? %d\n", a > b);
+    printf("Logical AND: %d\n", (a > 5 && b < 5));
+
+    return 0;
+}
+
+
+
+
